@@ -1,0 +1,87 @@
+/* Não usar margin e padding quando usar color em background-image */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+    color: white;
+}
+
+fieldset {
+    border: 3px solid dodgerblue;
+}
+
+legend {
+    border: 1px solid dodgerblue; /*  Adiciona borda/linha e cor */
+    padding: 10px;
+    text-align: center;
+    background-color: dodgerblue;
+    border-radius: 8px;
+}
+
+/* Adicionar efeitos ao data de nascimento */
+#data_nascimento {
+    border:none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+
+/* Adiciona efeito ao botão de enviar */
+#submit {
+    background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
+    width:100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor:pointer;
+    border-radius: 10px;
+}
+
+/* Muda a cor ao passar o mouse */
+#submit:hover {
+    background-image: linear-gradient(to right, rgb(0, 80,172), rgb(80, 19, 195));
+}
+
+.box {
+    position: absolute; /* faz ficar em um lugar só */
+    top: 50%; /* Abaixa */
+    left: 50%;  /* Joga pra direita */
+    transform: translate(-50%, -50%); /* Centralizou com base no left e top */
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px; /* Deixa a bordar sair pra fora do formulário */
+    border-radius: 15px; /* "Arredonda as bordas" */
+    width: auto; /* Largura */
+}
+
+.inputBox {
+   position: relative;
+}
+
+/* Faz aparecer só a linha no formulário */
+.inputUser {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none; /* Evita aparecer linha em voltas de onde se escreve */
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px; /* Espaço entre as letras */
+}
+
+.labelInput {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none; /* Qualquer lugar que se clickar a ação ocorre */
+    transition: .5s;
+}
+
+/* Animação */
+.inputUser:focus ~ .labelInput, .inputUser:valid ~.labelInput {
+    top:-20px; /* Faz a letra subir */
+    font-size: 12px;
+    color:dodgerblue;
+}

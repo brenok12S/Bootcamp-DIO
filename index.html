@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário | GN</title>
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+
+<body>
+
+  <div class="box">
+    <!-- Formulário -->
+    <form action="">
+      <fieldset>
+        <legend><b>Formulário de Clientes</b></legend>
+        <br>
+
+        <!--Informações do usuário-->
+        <div class="inputBox">
+          <input type="text" name="nome" id="nome" class="inputUser" required>
+          <label for="nome" class="labelInput">Nome Completo</label>
+        </div>
+        <br><br>
+
+        <div class="inputBox">
+          <input type="text" name="email" id="email" class="inputUser" required>
+          <label for="nome" class="labelInput">Email</label>
+        </div>
+        <br><br>
+
+        <div class="inputBox">
+          <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+          <label for="nome" class="labelInput" >Telefone</label>
+        </div>
+
+        <p>SEXO: </p>
+
+        <!-- Parte do genero -->
+        <input type="radio" name="genero" id="feminino" value="feminino" required>
+        <label for="feminino">Feminino</label>
+        <br>
+        <input type="radio" name="genero" id="masculino" value="masculino" required>
+        <label for="masculino">Masculino</label>
+        <br>
+        <input type="radio" name="genero" id="outro" value="outro" required>
+        <label for="outro">Outro</label> 
+        <br><br>
+
+        <!--Ano de Nascimento-->
+       
+          <label for="data_nascimento"><b>Data de Nascimento:</b></label>
+          <input type="date" name="data_nascimento" id="data_nascimento" required>
+        <br><br>
+
+        <!--As últimas três linhas-->
+        <div class="inputBox">
+          <input type="text" name="cidade" id="cidade" class="inputUser" required>
+          <label for="cidade" class="labelInput"><b>Cidade</b></label>
+        </div>
+        <br><br>
+
+        <div class="inputBox">
+          <input type="text" name="estado" id="estado" class="inputUser" required>
+          <label for="estado" class="labelInput"><b>Estado</b></label>
+        </div>
+        <br><br>
+
+        <div class="inputBox">
+          <input type="text" name="endereco" id="endereco" class="inputUser" required>
+          <label for="endereco" class="labelInput"><b>Endereço</b></label>
+        </div>
+        <br><br>
+
+        <!--Botão de enviar-->
+        <input type="submit"  name="submit" id="submit">
+
+      </fieldset>
+    </form>
+  </div>
+
+</body>
+
+</html>
+
+<!--Linear-Gradient é o degrade + o lado-->
+<!-- Div usado pra 'separar de forma vertical' -->
+<!-- Fieldset usado para agrupar -->
+<!-- Legend usado pra colocar a legenda e b pra colocar em negrito -->
+<!-- Label usado pra deixar uma mensagem ao lado do input -->
+
